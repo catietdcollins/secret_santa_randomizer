@@ -7,7 +7,7 @@ An interactive fun way to spice up your Secret Santa lists.
 Make sure Python 3.11, and Flask are installed.
 
 ## Authors
-[@catietdcollins] (https://github.com/catietdcollins)
-[@eddie-m-m] (https://github.com/eddie-m-m/)
+[@catietdcollins](https://github.com/catietdcollins)
+[@eddie-m-m](https://github.com/eddie-m-m/)
 
 ## Acknowledgements
