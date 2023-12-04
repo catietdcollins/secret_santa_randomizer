@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+    <link rel="shortcut icon"
+      href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+
+  </head>
+  <body>
+    <header id='header'>
+      <img src='static/imgs/santa.png' width="85px" height="95px"> <br>
+      &nbsp&nbsp 
+      <a href={{ url_for("home") }}>Home</a>
+      &nbsp&nbsp     
+      <a href="#">View List</a>&nbsp&nbsp
+    
+    </header>
+<h1>Here's Your Secret Santa List</h1>
+      <table>
+        <tr>
+          <th>Santas</th>
+          <th>Giftees</th>
+        </tr>
+        {% for santa in participants %}
+        <tr>
+          <td id="santas">{{ santa.name }}</td>
+          <td id='giftees'>{{ santa.recipient }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+  </body>
+</html>
